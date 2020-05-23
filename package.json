@@ -1,0 +1,23 @@
+{
+  "name": "devcli",
+  "version": "0.1.0",
+  "description": "",
+  "bin": {
+    "hello": "remove-node-modules/remove-node-modules.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^26.0.1"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "**/*.{js,jsx}"
+    ],
+    "coverageDirectory": "coverage"
+  }
+}
