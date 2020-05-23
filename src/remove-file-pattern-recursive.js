@@ -6,10 +6,12 @@ function removeFilePatternRecursivePathArray(array, pattern, path) {
     const subPath = path + '/' + item
     const stats = fs.statSync(subPath);
     if (item === pattern) {
+      console.log('Deleting ' + pattern + ' at ' + subPath)
       deleteFolderRecursive(subPath);
       return;
     }
     if (pattern instanceof RegExp && item.match(pattern)) {
+      console.log('Deleting ' + pattern + ' at ' + subPath)
       deleteFolderRecursive(subPath);
       return;
     }
