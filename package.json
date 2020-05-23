@@ -18,6 +18,10 @@
     "collectCoverageFrom": [
       "**/*.{js,jsx}"
     ],
-    "coverageDirectory": "coverage"
+    "coverageDirectory": "coverage",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/",
+      "/coverage/"
+    ]
   }
 }
